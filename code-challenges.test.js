@@ -214,8 +214,8 @@ const fullHouse = (array) => {
     for(i of array){
       deckHand[i] = (deckHand[i] || 0) +1
     }
-    const value = Object.values(deckHand)
-    if((value[0] === 2 && value[1] === 3 || value[1] === 2 && value[0] === 3)){
+    const cards = Object.values(deckHand)
+    if((cards[0] === 2 && cards[1] === 3 || cards[1] === 2 && cards[0] === 3)){
         // && was not working, utilized || *makes sense*
       return true
     }
